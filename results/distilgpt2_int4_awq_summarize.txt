@@ -1,0 +1,108 @@
+2025-05-11 12:20:46,880 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 0.20.0rc1
+[05/11/2025-12:20:49] [TRT-LLM] [I] Load tokenizer takes: 0.2641944885253906 sec
+[TensorRT-LLM][INFO] Engine version 0.20.0rc1 found in the config file, assuming engine(s) built by new builder API.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Using C++ session
+[TensorRT-LLM][INFO] Engine version 0.20.0rc1 found in the config file, assuming engine(s) built by new builder API.
+[TensorRT-LLM][INFO] MPI size: 1, MPI local size: 1, rank: 0
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.producer = {'name': 'modelopt', 'version': '0.27.1'}
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.share_embedding_table = False
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.residual_mlp = False
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.rank = 0
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.decoder = gpt2
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.rmsnorm = False
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.lm_head_bias = False
+[05/11/2025-12:20:53] [TRT-LLM] [W] Implicitly setting GPTConfig.model_type = gpt2
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set dtype to float16.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set bert_attention_plugin to auto.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set gpt_attention_plugin to auto.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set gemm_plugin to float16.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set explicitly_disable_gemm_plugin to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set gemm_swiglu_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set fp8_rowwise_gemm_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set qserve_gemm_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set identity_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set nccl_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set lora_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set dora_plugin to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set weight_only_groupwise_quant_matmul_plugin to float16.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set weight_only_quant_matmul_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set smooth_quant_plugins to True.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set smooth_quant_gemm_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set layernorm_quantization_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set rmsnorm_quantization_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set quantize_per_token_plugin to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set quantize_tensor_plugin to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set moe_plugin to auto.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set mamba_conv1d_plugin to auto.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set low_latency_gemm_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set low_latency_gemm_swiglu_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set gemm_allreduce_plugin to None.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set context_fmha to True.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set bert_context_fmha_fp32_acc to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set paged_kv_cache to True.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set remove_input_padding to True.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set norm_quant_fusion to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set reduce_fusion to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set user_buffer to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set tokens_per_block to 32.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set use_paged_context_fmha to True.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set use_fp8_context_fmha to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set fuse_fp4_quant to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set multiple_profiles to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set paged_state to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set streamingllm to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set manage_weights to False.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set use_fused_mlp to True.
+[05/11/2025-12:20:53] [TRT-LLM] [I] Set pp_reduce_scatter to False.
+[TensorRT-LLM][INFO] Engine version 0.20.0rc1 found in the config file, assuming engine(s) built by new builder API.
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] MPI size: 1, MPI local size: 1, rank: 0
+[TensorRT-LLM][INFO] Rank 0 is using GPU 0
+[TensorRT-LLM][INFO] TRTGptModel maxNumSequences: 1
+[TensorRT-LLM][INFO] TRTGptModel maxBatchSize: 1
+[TensorRT-LLM][INFO] TRTGptModel maxBeamWidth: 1
+[TensorRT-LLM][INFO] TRTGptModel maxSequenceLen: 1024
+[TensorRT-LLM][INFO] TRTGptModel maxDraftLen: 0
+[TensorRT-LLM][INFO] TRTGptModel mMaxAttentionWindowSize: (1024) * 6
+[TensorRT-LLM][INFO] TRTGptModel enableTrtOverlap: 0
+[TensorRT-LLM][INFO] TRTGptModel normalizeLogProbs: 1
+[TensorRT-LLM][INFO] TRTGptModel maxNumTokens: 8192
+[TensorRT-LLM][INFO] TRTGptModel maxInputLen: 1023 = min(maxSequenceLen - 1, maxNumTokens) since context FMHA and usePackedInput are enabled
+[TensorRT-LLM][INFO] TRTGptModel If model type is encoder, maxInputLen would be reset in trtEncoderModel to maxInputLen: min(maxSequenceLen, maxNumTokens).
+[TensorRT-LLM][INFO] Capacity Scheduler Policy: GUARANTEED_NO_EVICT
+[TensorRT-LLM][INFO] Context Chunking Scheduler Policy: None
+[TensorRT-LLM][INFO] Loaded engine size: 171 MiB
+[TensorRT-LLM][INFO] Engine load time 2974 ms
+[TensorRT-LLM][INFO] Inspecting the engine to identify potential runtime issues...
+[TensorRT-LLM][INFO] The profiling verbosity of the engine does not allow this analysis to proceed. Re-build the engine with 'detailed' profiling verbosity to get more diagnostics.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 144.17 MiB for execution context memory.
+[TensorRT-LLM][INFO] gatherContextLogits: 0
+[TensorRT-LLM][INFO] gatherGenerationLogits: 0
+[TensorRT-LLM][INFO] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +0, now: CPU 0, GPU 169 (MiB)
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 150.32 KB GPU memory for runtime buffers.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 555.71 KB GPU memory for decoder.
+[TensorRT-LLM][INFO] Memory usage when calculating max tokens in paged kv cache: total: 15.99 GiB, available: 14.53 GiB
+[TensorRT-LLM][INFO] Number of blocks in KV cache primary pool: 23812
+[TensorRT-LLM][INFO] Number of blocks in KV cache secondary pool: 0, onboard blocks to primary memory before reuse: true
+[TensorRT-LLM][INFO] Max KV cache pages per sequence: 32 [window size=1024]
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 13.08 GiB for max tokens in paged KV cache (761984).
+[05/11/2025-12:20:57] [TRT-LLM] [I] Load engine takes: 3.879596710205078 sec
+[05/11/2025-12:20:59] [TRT-LLM] [I] ---------------------------------------------------------
+[05/11/2025-12:20:59] [TRT-LLM] [I] TensorRT-LLM Generated: 
+[05/11/2025-12:20:59] [TRT-LLM] [I]  Input: ['Pensioners aged over 75 will be guaranteed same-day appointments with their GP, as part of Tory plans for a huge cash injection for the NHS. David Cameron will announce the move today as he pledges to commit £8billion to fund the health service. This is the figure named by NHS boss Simon Stevens as the amount needed to help plug a £30billion hole in the health service’s accounts over the next five years. David Cameron will announce the move today as he pledges to commit £8billion to fund the health service . Prime Minister said last night he was ‘utterly committed’ to health service . The move is designed to demolish cynical Labour claims that the Tories would ‘cut the NHS to the bone’ and will mean ‘at least’ an extra £8billion a year for the NHS by 2020. The Prime Minister said last night he was ‘utterly committed’ to the health service. However, the promise that all over-75s will get a guaranteed same-day GP appointment will raise eyebrows among critics who say GPs are already struggling to cope. Health Secretary Jeremy Hunt last year announced a plan to ‘train and retain’ an extra 5,000 GPs, which Tory sources said last night would allow them to deliver the same-day pledge. The Royal College of GPs welcomed the move as a ‘good start’, but warned that, on current trends, an extra 8,000 GPs would be needed by 2020 just to stand still. Mr Hunt said: ‘The NHS has set out its vision for how we best improve the health service for patients, and today we are backing that plan with the money it needs. But we can only have a strong NHS if we have a strong economy. ‘We need to do much more to ensure our vulnerable elderly can be treated in the community. That is why we are building on our decision to bring back named GPs for the over-75s by ensuring that, as part of this, they are guaranteed a same-day GP service when they need it. Health Secretary Jeremy Hunt last year announced a plan to ‘train and retain’ an extra 5,000 GPs . ‘This means family doctors can focus on giving elderly people the care they need, and prevent unnecessary trips to hospital.’ The guarantee will build on the new ‘proactive care programme’, which requires GPs to offer a priority service to their most vulnerable 2 per cent of patients. The decision to back the ‘Stevens plan’ is designed to neutralise Labour attacks on the issue. Mr Cameron said the commitment to find the money would be included in next week’s Conservative Party manifesto. Referring to the care given to his late son Ivan, the Prime Minister said: ‘As someone who has been supported by the NHS at the most difficult time in my life, I’m utterly committed to ensuring it is there for everyone when they need it too. ‘That’s why I’m backing the NHS’s own plan with the cash required to ensure it can continue to deliver an amazing service to patients and their families in the future.’ The Tory move will pile pressure on Labour to put its money where its mouth is on the NHS. This week, Labour health spokesman Andy Burnham said he could not commit to Mr Stevens’s five-year plan, adding: ‘I’m not in the business of making false promises or giving cheques to the NHS that will bounce a few days after the election.’ Tory sources last night insisted the money could be found through efficiency savings and the proceeds of economic growth. They pointed to official figures showing that NHS spending has increased by £7billion in real terms since 2010, despite the austerity programme. A source said: ‘We have delivered a £7billion increase even when the economy was really struggling from Labour’s recession in the first few years. Now we have got years of economic growth forecast, so it is do-able and we will do it.’']
+[05/11/2025-12:20:59] [TRT-LLM] [I] 
+ Reference: ['David Cameron set to announce move today to help plug NHS £30bn hole .\nMove is designed to demolish cynical Labour claims of Tory cutting NHS .\nPrime Minister said last night he was ‘utterly committed’ to health service .']
+[05/11/2025-12:20:59] [TRT-LLM] [I] 
+ Output: [['']]
+[05/11/2025-12:20:59] [TRT-LLM] [I] ---------------------------------------------------------
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[05/11/2025-12:21:02] [TRT-LLM] [I] TensorRT-LLM (total latency: 2.67142915725708 sec)
+[05/11/2025-12:21:02] [TRT-LLM] [I] TensorRT-LLM (total output tokens: 2000)
+[05/11/2025-12:21:02] [TRT-LLM] [I] TensorRT-LLM (tokens per second: 748.6629374269174)
+[05/11/2025-12:21:02] [TRT-LLM] [I] TensorRT-LLM beam 0 result
+[05/11/2025-12:21:02] [TRT-LLM] [I]   rouge1: 0.0
+[05/11/2025-12:21:02] [TRT-LLM] [I]   rouge2: 0.0
+[05/11/2025-12:21:02] [TRT-LLM] [I]   rougeL: 0.0
+[05/11/2025-12:21:02] [TRT-LLM] [I]   rougeLsum: 0.0

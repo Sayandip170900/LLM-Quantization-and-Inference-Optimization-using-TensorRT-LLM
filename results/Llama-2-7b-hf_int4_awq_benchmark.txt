@@ -1,0 +1,8 @@
+2025-05-11 10:56:05,518 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 0.20.0rc1
+Allocated 664.01 MiB for execution context memory.
+/mnt/c/Users/spal6554/pytorch/venvnn/lib/python3.12/site-packages/torch/nested/__init__.py:228: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  return _nested.nested_tensor(
+2025-05-11 10:57:31,904 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 0.20.0rc1
+[BENCHMARK] engine_dir Llama-2-7b-hf_int4_awq world_size 1 num_heads 32 num_kv_heads 32 num_layers 32 hidden_size 4096 vocab_size 32000 precision float16 batch_size 16 gpu_weights_percent 1.0 input_length 128 output_length 20 gpu_peak_mem(gb) 6.554 build_time(s) None tokens_per_sec 355.35 percentile95(ms) 934.48 percentile99(ms) 950.501 latency(ms) 900.51 compute_cap sm86 quantization 33 generation_time(ms) 321.288 total_generated_tokens 304.0 generation_tokens_per_second 946.191

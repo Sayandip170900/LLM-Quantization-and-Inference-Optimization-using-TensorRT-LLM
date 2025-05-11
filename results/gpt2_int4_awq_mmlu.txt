@@ -1,0 +1,178 @@
+2025-05-10 15:04:01,749 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 0.20.0rc1
+[TensorRT-LLM][INFO] Engine version 0.20.0rc1 found in the config file, assuming engine(s) built by new builder API.
+[TensorRT-LLM][INFO] MPI size: 1, MPI local size: 1, rank: 0
+[TensorRT-LLM][INFO] Engine version 0.20.0rc1 found in the config file, assuming engine(s) built by new builder API.
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] MPI size: 1, MPI local size: 1, rank: 0
+[TensorRT-LLM][INFO] Rank 0 is using GPU 0
+[TensorRT-LLM][INFO] TRTGptModel maxNumSequences: 16
+[TensorRT-LLM][INFO] TRTGptModel maxBatchSize: 16
+[TensorRT-LLM][INFO] TRTGptModel maxBeamWidth: 1
+[TensorRT-LLM][INFO] TRTGptModel maxSequenceLen: 1024
+[TensorRT-LLM][INFO] TRTGptModel maxDraftLen: 0
+[TensorRT-LLM][INFO] TRTGptModel mMaxAttentionWindowSize: (1024) * 12
+[TensorRT-LLM][INFO] TRTGptModel enableTrtOverlap: 0
+[TensorRT-LLM][INFO] TRTGptModel normalizeLogProbs: 1
+[TensorRT-LLM][INFO] TRTGptModel maxNumTokens: 8192
+[TensorRT-LLM][INFO] TRTGptModel maxInputLen: 1023 = min(maxSequenceLen - 1, maxNumTokens) since context FMHA and usePackedInput are enabled
+[TensorRT-LLM][INFO] TRTGptModel If model type is encoder, maxInputLen would be reset in trtEncoderModel to maxInputLen: min(maxSequenceLen, maxNumTokens).
+[TensorRT-LLM][INFO] Capacity Scheduler Policy: GUARANTEED_NO_EVICT
+[TensorRT-LLM][INFO] Context Chunking Scheduler Policy: None
+[TensorRT-LLM][INFO] Loaded engine size: 193 MiB
+[TensorRT-LLM][INFO] Engine load time 4545 ms
+[TensorRT-LLM][INFO] Inspecting the engine to identify potential runtime issues...
+[TensorRT-LLM][INFO] The profiling verbosity of the engine does not allow this analysis to proceed. Re-build the engine with 'detailed' profiling verbosity to get more diagnostics.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 144.17 MiB for execution context memory.
+[TensorRT-LLM][INFO] gatherContextLogits: 0
+[TensorRT-LLM][INFO] gatherGenerationLogits: 0
+[TensorRT-LLM][INFO] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +0, now: CPU 0, GPU 190 (MiB)
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 1.88 MB GPU memory for runtime buffers.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 8.68 MB GPU memory for decoder.
+[TensorRT-LLM][INFO] Memory usage when calculating max tokens in paged kv cache: total: 15.99 GiB, available: 14.50 GiB
+[TensorRT-LLM][INFO] Number of blocks in KV cache primary pool: 11881
+[TensorRT-LLM][INFO] Number of blocks in KV cache secondary pool: 0, onboard blocks to primary memory before reuse: true
+[TensorRT-LLM][INFO] Max KV cache pages per sequence: 32 [window size=1024]
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 13.05 GiB for max tokens in paged KV cache (380192).
+
+  0%|          | 0/57 [00:00<?, ?it/s]
+  2%|▏         | 1/57 [00:02<02:14,  2.40s/it]
+  4%|▎         | 2/57 [00:03<01:40,  1.83s/it]
+  5%|▌         | 3/57 [00:05<01:30,  1.68s/it]
+  7%|▋         | 4/57 [00:06<01:15,  1.42s/it]
+  9%|▉         | 5/57 [00:08<01:33,  1.80s/it]
+ 11%|█         | 6/57 [00:10<01:27,  1.72s/it]
+ 12%|█▏        | 7/57 [00:11<01:15,  1.52s/it]
+ 14%|█▍        | 8/57 [00:12<01:10,  1.44s/it]
+ 16%|█▌        | 9/57 [00:13<01:04,  1.35s/it]Token indices sequence length is longer than the specified maximum sequence length for this model (1396 > 1024). Running this sequence through the model will result in indexing errors
+
+ 18%|█▊        | 10/57 [00:15<01:10,  1.50s/it]
+ 19%|█▉        | 11/57 [00:16<01:02,  1.35s/it]
+ 21%|██        | 12/57 [00:17<00:55,  1.24s/it]
+ 23%|██▎       | 13/57 [00:19<01:07,  1.54s/it]
+ 25%|██▍       | 14/57 [00:21<01:04,  1.49s/it]
+ 26%|██▋       | 15/57 [00:22<01:04,  1.53s/it]
+ 28%|██▊       | 16/57 [00:26<01:32,  2.27s/it]
+ 30%|██▉       | 17/57 [00:28<01:19,  2.00s/it]
+ 32%|███▏      | 18/57 [00:29<01:06,  1.70s/it]
+ 33%|███▎      | 19/57 [00:35<01:50,  2.90s/it]
+ 35%|███▌      | 20/57 [00:37<01:39,  2.69s/it]
+ 37%|███▋      | 21/57 [00:38<01:21,  2.26s/it]
+ 39%|███▊      | 22/57 [00:44<01:55,  3.29s/it]
+ 40%|████      | 23/57 [00:46<01:41,  3.00s/it]
+ 42%|████▏     | 24/57 [00:48<01:30,  2.74s/it]
+ 44%|████▍     | 25/57 [00:52<01:38,  3.09s/it]
+ 46%|████▌     | 26/57 [00:55<01:35,  3.09s/it]
+ 47%|████▋     | 27/57 [00:58<01:30,  3.00s/it]
+ 49%|████▉     | 28/57 [01:00<01:14,  2.57s/it]
+ 51%|█████     | 29/57 [01:08<01:59,  4.25s/it]
+ 53%|█████▎    | 30/57 [01:11<01:43,  3.84s/it]
+ 54%|█████▍    | 31/57 [01:17<01:59,  4.59s/it]
+ 56%|█████▌    | 32/57 [01:22<01:59,  4.77s/it]
+ 58%|█████▊    | 33/57 [01:24<01:35,  3.98s/it]
+ 60%|█████▉    | 34/57 [01:26<01:13,  3.17s/it]
+ 61%|██████▏   | 35/57 [01:27<00:58,  2.68s/it]
+ 63%|██████▎   | 36/57 [01:28<00:47,  2.25s/it]
+ 65%|██████▍   | 37/57 [01:30<00:42,  2.14s/it]
+ 67%|██████▋   | 38/57 [01:32<00:36,  1.93s/it]
+ 68%|██████▊   | 39/57 [01:33<00:29,  1.66s/it]
+ 70%|███████   | 40/57 [01:35<00:31,  1.87s/it]
+ 72%|███████▏  | 41/57 [01:36<00:25,  1.61s/it]
+ 74%|███████▎  | 42/57 [01:46<01:04,  4.28s/it]
+ 75%|███████▌  | 43/57 [01:50<00:58,  4.15s/it]
+ 77%|███████▋  | 44/57 [02:01<01:20,  6.19s/it]
+ 79%|███████▉  | 45/57 [02:05<01:05,  5.48s/it]
+ 81%|████████  | 46/57 [02:08<00:52,  4.77s/it]
+ 82%|████████▏ | 47/57 [02:12<00:44,  4.43s/it]
+ 84%|████████▍ | 48/57 [02:18<00:43,  4.85s/it]
+ 86%|████████▌ | 49/57 [02:55<01:55, 14.46s/it]
+ 88%|████████▊ | 50/57 [02:59<01:20, 11.55s/it]
+ 89%|████████▉ | 51/57 [03:07<01:01, 10.26s/it]
+ 91%|█████████ | 52/57 [03:08<00:37,  7.55s/it]
+ 93%|█████████▎| 53/57 [03:12<00:26,  6.67s/it]
+ 95%|█████████▍| 54/57 [03:15<00:15,  5.31s/it]
+ 96%|█████████▋| 55/57 [03:16<00:08,  4.02s/it]
+ 98%|█████████▊| 56/57 [03:17<00:03,  3.32s/it]
+100%|██████████| 57/57 [03:19<00:00,  2.85s/it]
+100%|██████████| 57/57 [03:19<00:00,  3.50s/it]
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+Average accuracy 0.000 - abstract_algebra
+Average accuracy 0.000 - anatomy
+Average accuracy 0.000 - astronomy
+Average accuracy 0.000 - business_ethics
+Average accuracy 0.008 - clinical_knowledge
+Average accuracy 0.000 - college_biology
+Average accuracy 0.000 - college_chemistry
+Average accuracy 0.000 - college_computer_science
+Average accuracy 0.000 - college_mathematics
+Average accuracy 0.012 - college_medicine
+Average accuracy 0.000 - college_physics
+Average accuracy 0.000 - computer_security
+Average accuracy 0.000 - conceptual_physics
+Average accuracy 0.000 - econometrics
+Average accuracy 0.000 - electrical_engineering
+Average accuracy 0.003 - elementary_mathematics
+Average accuracy 0.000 - formal_logic
+Average accuracy 0.090 - global_facts
+Average accuracy 0.000 - high_school_biology
+Average accuracy 0.000 - high_school_chemistry
+Average accuracy 0.000 - high_school_computer_science
+Average accuracy 0.000 - high_school_european_history
+Average accuracy 0.015 - high_school_geography
+Average accuracy 0.000 - high_school_government_and_politics
+Average accuracy 0.041 - high_school_macroeconomics
+Average accuracy 0.000 - high_school_mathematics
+Average accuracy 0.004 - high_school_microeconomics
+Average accuracy 0.000 - high_school_physics
+Average accuracy 0.011 - high_school_psychology
+Average accuracy 0.005 - high_school_statistics
+Average accuracy 0.000 - high_school_us_history
+Average accuracy 0.000 - high_school_world_history
+Average accuracy 0.000 - human_aging
+Average accuracy 0.115 - human_sexuality
+Average accuracy 0.000 - international_law
+Average accuracy 0.000 - jurisprudence
+Average accuracy 0.000 - logical_fallacies
+Average accuracy 0.000 - machine_learning
+Average accuracy 0.029 - management
+Average accuracy 0.009 - marketing
+Average accuracy 0.080 - medical_genetics
+Average accuracy 0.000 - miscellaneous
+Average accuracy 0.000 - moral_disputes
+Average accuracy 0.000 - moral_scenarios
+Average accuracy 0.000 - nutrition
+Average accuracy 0.000 - philosophy
+Average accuracy 0.000 - prehistory
+Average accuracy 0.032 - professional_accounting
+Average accuracy 0.000 - professional_law
+Average accuracy 0.000 - professional_medicine
+Average accuracy 0.005 - professional_psychology
+Average accuracy 0.000 - public_relations
+Average accuracy 0.000 - security_studies
+Average accuracy 0.005 - sociology
+Average accuracy 0.010 - us_foreign_policy
+Average accuracy 0.054 - virology
+Average accuracy 0.012 - world_religions
+Average accuracy 0.19 - math
+Average accuracy 1.28 - health
+Average accuracy 0.00 - physics
+Average accuracy 1.14 - business
+Average accuracy 0.00 - biology
+Average accuracy 0.00 - chemistry
+Average accuracy 0.00 - computer science
+Average accuracy 2.29 - economics
+Average accuracy 0.00 - engineering
+Average accuracy 0.10 - philosophy
+Average accuracy 1.55 - other
+Average accuracy 0.00 - history
+Average accuracy 1.52 - geography
+Average accuracy 0.15 - politics
+Average accuracy 0.78 - psychology
+Average accuracy 4.82 - culture
+Average accuracy 0.00 - law
+Average accuracy 0.07 - STEM
+Average accuracy 0.04 - humanities
+Average accuracy 1.49 - social sciences
+Average accuracy 1.36 - other (business, health, misc.)
+MMLU weighted average accuracy: 0.67

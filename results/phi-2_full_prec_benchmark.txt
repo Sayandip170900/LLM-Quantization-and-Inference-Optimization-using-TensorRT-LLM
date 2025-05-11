@@ -1,0 +1,20 @@
+2025-05-10 15:30:11,078 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 0.20.0rc1
+Allocated 560.01 MiB for execution context memory.
+/mnt/c/Users/spal6554/pytorch/venvnn/lib/python3.12/site-packages/torch/nested/__init__.py:228: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  return _nested.nested_tensor(
+[BENCHMARK] engine_dir phi-2_full_prec world_size 1 num_heads 32 num_kv_heads 32 num_layers 32 hidden_size 2560 vocab_size 51200 precision float16 batch_size 16 gpu_weights_percent 1.0 input_length 128 output_length 20 gpu_peak_mem(gb) 0.0 build_time(s) None tokens_per_sec 550.03 percentile95(ms) 597.775 percentile99(ms) 599.25 latency(ms) 581.789 compute_cap sm86 quantization 0 generation_time(ms) 352.82 total_generated_tokens 304.0 generation_tokens_per_second 861.629
+2025-05-10 15:32:46,345 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 0.20.0rc1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/synchronize.py", line 115, in __setstate__
+    self._semlock = _multiprocessing.SemLock._rebuild(*state)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory
