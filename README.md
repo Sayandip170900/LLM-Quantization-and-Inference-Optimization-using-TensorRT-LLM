@@ -1,4 +1,4 @@
-# LLM Inference Optimization and Quantization using TensorRT-LLM
+# LLM Quantization and Inference Optimization using TensorRT-LLM
 
 This repository benchmarks multiple Large Language Models in different precision formats using TensorRT-LLM. The workflow includes quantization, engine building, inference benchmarking, accuracy evaluation, and result visualization.
 
